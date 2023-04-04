@@ -1,0 +1,76 @@
+/* Estilos do VideoFooter */
+
+/* Estilos gerais do VideoFooter */
+.Videofooter {
+  position: relative;
+  bottom: 20%;
+  color: white;
+  margin-left: 30px;
+}
+
+/* Estilos do texto do VideoFooter */
+.VideoFooterText {
+  margin-bottom: 20px;
+}
+
+.VideoFooterText h3 {
+  padding-bottom: 20px;
+}
+
+.VideoFooterText p {
+  padding-bottom: 20px;
+}
+
+/* Estilos player do VideoFooter */
+.VideoFooterMusic {
+  display: flex;
+  align-items: center;
+}
+
+/* Container do título da música */
+.VideoFooterMusicText {
+  width: 80%;
+  overflow-x: hidden;
+}
+
+.VideoFooterMusicText p {
+  animation: MoveTheText 4s infinite linear;
+}
+
+/* Estilos do ícone do vinil */
+.VideoFooterRecord {
+  animation: SpinTheRecord 3s infinite linear;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  height: 50px;
+  filter: invert();
+}
+
+/* Animação vinil rodando */
+@keyframes SpinTheRecord {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Animação do texto correndo */
+@keyframes MoveTheText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media only screen and (max-width: 400px){
+.Videofooter {
+  bottom: 22%;
+}
+.VideoFooterMusicText{
+  width: 78%;
+}
+}
